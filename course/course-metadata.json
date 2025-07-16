@@ -1,0 +1,39 @@
+{
+  "id": "68782f04c4c4ccaf46c809d5",
+  "title": "Npm run dev course",
+  "description": "This course provides students with a comprehensive understanding of the process, efficiencies, and overall function of npm run dev, a package manager for the JavaScript programming language.",
+  "learningObjectives": [
+    "Understand the purpose of Node.js and NPM",
+    "Install and setup Node.js and NPM",
+    "Understand package.json structure",
+    "Learn what dependencies are and how to manage them",
+    "Understand scripts, build processes, and running servers"
+  ],
+  "finalProjectDetails": {
+    "overview": "Students will have to demonstrate their understanding by setting up a Node.js project using npm scripts to automate build process and running a server.",
+    "planningResources": [
+      "Official Node.js and NPM documentation",
+      "Video resources",
+      "Community blogs"
+    ],
+    "submissionInstructions": "Students will submit their project via GitHub link. The project should include the source code, a README file with comprehensive project documentation, installation guide, and a package.json file with all dependencies included.",
+    "requirements": [
+      ""
+    ]
+  },
+  "createdBy": {
+    "name": "Tammam Alwafai",
+    "githubUsername": "1992tw"
+  },
+  "contributors": [
+    {
+      "name": "Doina Fitchevici",
+      "githubUsername": "DoinaFitchevici"
+    }
+  ],
+  "status": "pending",
+  "originalGithubUrl": null,
+  "createdAt": "2025-07-16T23:00:20.354Z",
+  "updatedAt": "2025-07-16T23:00:20.354Z",
+  "remoteGithubUrl": "https://github.com/1992tw/newexport"
+}
