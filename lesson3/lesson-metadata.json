@@ -2,14 +2,154 @@
   "id": "68782f04c4c4ccaf46c809dd",
   "lessonNumber": 3,
   "title": "Understanding package.json",
-  "status": "pending",
+  "status": "complete",
   "assignment": {
-    "title": "Assignment will be generated",
-    "objective": "Objective will be provided when lesson is generated",
-    "expectedCapabilities": [],
-    "instructions": [],
-    "tasks": [],
-    "submissionInstructions": "Submission instructions will be provided when lesson is generated"
+    "title": "Creating and Customizing package.json",
+    "objective": "Understand and create a package.json file for a project with specified configurations.",
+    "expectedCapabilities": [
+      "Initialize a package.json",
+      "Edit and add scripts to package.json"
+    ],
+    "submissionInstructions": "Submit the customized package.json file and screenshots of the scripts being run.",
+    "tasks": [
+      {
+        "taskNumber": 1,
+        "title": "Create and customize a package.json",
+        "description": "Create the package.json and add configuration details.",
+        "codeExample": "{\n  \"name\": \"custom-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"app.js\",\n  \"scripts\": {\n    \"dev\": \"nodemon app.js\"\n  }\n}",
+        "_id": "68782fa3c4c4ccaf46c80a7f"
+      }
+    ],
+    "instructions": [
+      {
+        "partNumber": 1,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Initialize package.json",
+            "description": "Use npm init to create a basic package.json file.",
+            "codeExample": "$ npm init",
+            "_id": "68782fa3c4c4ccaf46c80a7d"
+          },
+          {
+            "taskNumber": 2,
+            "title": "Add Custom Scripts",
+            "description": "Edit the package.json file to add custom scripts for running the server.",
+            "codeExample": "{\n  \"scripts\": {\n    \"start\": \"node server.js\",\n    \"test\": \"echo 'TODO: add tests'\"\n  }\n}",
+            "_id": "68782fa3c4c4ccaf46c80a7e"
+          }
+        ],
+        "_id": "68782fa3c4c4ccaf46c80a7c"
+      }
+    ],
+    "checklist": [
+      "Initialized package.json",
+      "Added custom scripts",
+      "Verified scripts by running them"
+    ],
+    "checkForUnderstanding": [
+      {
+        "question": "What does the 'dev' script typically do?",
+        "options": [
+          "Starts service in production mode",
+          "Watches for changes and restarts the server",
+          "Compiles CSS files"
+        ],
+        "answer": "Watches for changes and restarts the server",
+        "_id": "68782fa3c4c4ccaf46c80a7a"
+      },
+      {
+        "question": "What happens if you change the 'main' field in package.json?",
+        "options": [
+          "It changes the starting script",
+          "It changes the project's name",
+          "It changes the entry point file"
+        ],
+        "answer": "It changes the entry point file",
+        "_id": "68782fa3c4c4ccaf46c80a7b"
+      }
+    ]
   },
-  "subsections": []
+  "subsections": [
+    {
+      "subsectionOrder": 1,
+      "title": "Introduction to package.json",
+      "content": "The package.json file is a fundamental part of Node.js project configurations. It holds various metadata relevant to the project and is essential for defining project properties, dependencies, and scripts.",
+      "videoUrl": "http://video.com/introToPackageJson",
+      "codeExamples": [
+        "{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\",\n    \"test\": \"mocha test.js\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://docs.npmjs.com/files/package.json"
+      ],
+      "quizzes": [
+        {
+          "question": "What is a key use of the package.json file?",
+          "options": [
+            "Defining database schemas",
+            "Defining project properties and dependencies",
+            "Storing user data"
+          ],
+          "answer": "Defining project properties and dependencies",
+          "_id": "68782fa3c4c4ccaf46c80a75"
+        }
+      ],
+      "_id": "68782fa3c4c4ccaf46c80a74"
+    },
+    {
+      "subsectionOrder": 2,
+      "title": "Key Elements of the package.json",
+      "content": "A package.json file generally contains the following elements:\n- **Name and Version**: Uniquely identifies your package, e.g., `\"name\": \"my-app\"`.\n- **Main**: Entry point of the application, usually `index.js`.\n- **Scripts**: Useful for specifying scripts to run, e.g., `\"start\": \"node index.js\"`.\n- **Dependencies**: Specifies project dependencies per environment.",
+      "videoUrl": "http://video.com/packageJsonElements",
+      "codeExamples": [
+        "{\n  \"name\": \"sample-app\",\n  \"version\": \"0.1.0\",\n  \"main\": \"server.js\",\n  \"scripts\": {\n    \"dev\": \"nodemon server.js\",\n    \"build\": \"webpack --config webpack.config.js\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://docs.npmjs.com/cli/v7/configuring-npm/package-json"
+      ],
+      "quizzes": [
+        {
+          "question": "Which field in package.json specifies the entry point?",
+          "options": [
+            "name",
+            "main",
+            "scripts"
+          ],
+          "answer": "main",
+          "_id": "68782fa3c4c4ccaf46c80a77"
+        }
+      ],
+      "_id": "68782fa3c4c4ccaf46c80a76"
+    },
+    {
+      "subsectionOrder": 3,
+      "title": "Creating a package.json",
+      "content": "To create a package.json file, use `npm init` command. It will guide you through the creation process, step by step, asking for information about your project like name, version, and main file.",
+      "videoUrl": "http://video.com/creatingPackageJson",
+      "codeExamples": [
+        "$ npm init\n{\n  \"name\": \"example-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\"\n  }\n}"
+      ],
+      "externalLinks": [],
+      "quizzes": [
+        {
+          "question": "Which command initializes a new package.json file?",
+          "options": [
+            "npm start",
+            "npm install",
+            "npm init"
+          ],
+          "answer": "npm init",
+          "_id": "68782fa3c4c4ccaf46c80a79"
+        }
+      ],
+      "_id": "68782fa3c4c4ccaf46c80a78"
+    }
+  ],
+  "supplementalVideos": [
+    "http://video.com/packageJsonTutorial"
+  ],
+  "references": [
+    "https://docs.npmjs.com/files/package.json",
+    "https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package.json/"
+  ]
 }
