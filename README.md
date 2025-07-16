@@ -43,6 +43,8 @@ Students will submit their project via GitHub link. The project should include t
 ## Contributors
 
 - [Doina Fitchevici](https://github.com/DoinaFitchevici)
+- [Hanna Akhramchuk](https://github.com/akhhanna20)
+- [Tom Rau](https://github.com/hifilorau)
 
 ---
 
