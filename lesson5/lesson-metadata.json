@@ -1,0 +1,214 @@
+{
+  "id": "68782f04c4c4ccaf46c809df",
+  "lessonNumber": 5,
+  "title": "Scripts, Build Processes and Running Servers",
+  "status": "pending",
+  "assignment": {
+    "title": "Automate Tasks with npm Scripts and Run a Server",
+    "objective": "Create and manage npm scripts to automate tasks and use them to run a development server.",
+    "expectedCapabilities": [
+      "Define and run npm scripts",
+      "Setup a development environment",
+      "Build a production version of an application"
+    ],
+    "submissionInstructions": "Submit the updated package.json file and a short video demonstrating your server handling live reloading.",
+    "tasks": [
+      {
+        "taskNumber": 1,
+        "title": "Setup Development Server",
+        "description": "Configure npm scripts to automatically restart the development server on changes.",
+        "codeExample": "\"scripts\": { \"dev\": \"nodemon server.js\" }",
+        "_id": "68782f33c4c4ccaf46c80a2c"
+      }
+    ],
+    "instructions": [
+      {
+        "partNumber": 1,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Define Custom Scripts",
+            "description": "Add 'start', 'build', and 'dev' scripts in package.json.",
+            "codeExample": "\"scripts\": { \"start\": \"node server.js\", \"build\": \"webpack --mode production\", \"dev\": \"nodemon server.js\" }",
+            "_id": "68782f33c4c4ccaf46c80a27"
+          }
+        ],
+        "_id": "68782f33c4c4ccaf46c80a26"
+      },
+      {
+        "partNumber": 2,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Run Development Server",
+            "description": "Use npm scripts to start a development server that auto-reloads on changes.",
+            "codeExample": "npm run dev",
+            "_id": "68782f33c4c4ccaf46c80a29"
+          }
+        ],
+        "_id": "68782f33c4c4ccaf46c80a28"
+      },
+      {
+        "partNumber": 3,
+        "steps": [
+          {
+            "taskNumber": 1,
+            "title": "Automate the Build Process",
+            "description": "Create scripts that automate the build process using webpack.",
+            "codeExample": "npm run build",
+            "_id": "68782f33c4c4ccaf46c80a2b"
+          }
+        ],
+        "_id": "68782f33c4c4ccaf46c80a2a"
+      }
+    ],
+    "checklist": [
+      "Scripts defined in package.json",
+      "Development server starts with nodemon",
+      "Build process executes successfully"
+    ],
+    "checkForUnderstanding": [
+      {
+        "question": "What is the purpose of npm 'scripts'?",
+        "options": [
+          "Manage dependencies",
+          "Automate tasks",
+          "Compile code"
+        ],
+        "answer": "Automate tasks",
+        "_id": "68782f33c4c4ccaf46c80a23"
+      },
+      {
+        "question": "Why use a development server like nodemon?",
+        "options": [
+          "Increases server security",
+          "Automatically restarts server on changes",
+          "Improves CSS styling"
+        ],
+        "answer": "Automatically restarts server on changes",
+        "_id": "68782f33c4c4ccaf46c80a24"
+      },
+      {
+        "question": "What is a common task to automate in a build process?",
+        "options": [
+          "Transpiling ES6 code",
+          "Updating database",
+          "Improving SQL queries"
+        ],
+        "answer": "Transpiling ES6 code",
+        "_id": "68782f33c4c4ccaf46c80a25"
+      }
+    ]
+  },
+  "subsections": [
+    {
+      "subsectionOrder": 1,
+      "title": "Introduction to npm Scripts",
+      "content": "npm scripts are one of the most powerful tools included with npm. They allow you to automate repetitive tasks. An npm script is essentially a pre-defined command that is executed when you run `npm run [script-name]`.",
+      "videoUrl": "http://video.com/npmScripts",
+      "codeExamples": [
+        "{\n  \"scripts\": {\n    \"start\": \"node server.js\",\n    \"build\": \"webpack --mode production\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://docs.npmjs.com/misc/scripts"
+      ],
+      "quizzes": [
+        {
+          "question": "What command is used to run an npm script named 'build'?",
+          "options": [
+            "npm run build",
+            "npm start build",
+            "node build.js"
+          ],
+          "answer": "npm run build",
+          "_id": "68782f33c4c4ccaf46c80a1c"
+        }
+      ],
+      "_id": "68782f33c4c4ccaf46c80a1b"
+    },
+    {
+      "subsectionOrder": 2,
+      "title": "Creating and Managing npm Scripts",
+      "content": "You can define custom scripts in the `scripts` section of your `package.json`. This could be anything from starting the server to automating tests and build tasks.",
+      "videoUrl": "http://video.com/creatingNpmScripts",
+      "codeExamples": [
+        "{\n  \"scripts\": {\n    \"clean\": \"rm -rf dist\",\n    \"test\": \"jest\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://www.sitepoint.com/guide-basic-npm-run-commands/"
+      ],
+      "quizzes": [
+        {
+          "question": "Where do you define npm scripts within a project?",
+          "options": [
+            "In package.json under \"dependencies\"",
+            "In package.json under \"scripts\"",
+            "In server.js file"
+          ],
+          "answer": "In package.json under \"scripts\"",
+          "_id": "68782f33c4c4ccaf46c80a1e"
+        }
+      ],
+      "_id": "68782f33c4c4ccaf46c80a1d"
+    },
+    {
+      "subsectionOrder": 3,
+      "title": "Understanding the Build Process",
+      "content": "The build process refers to converting source code into a production-ready application. This can include tasks such as transpiling, bundling, minifying, and cleaning of code.",
+      "videoUrl": "http://video.com/buildProcess",
+      "codeExamples": [
+        "// Example of build script\n{\n  \"scripts\": {\n    \"build\": \"babel src -d dist\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://webpack.js.org/concepts/"
+      ],
+      "quizzes": [
+        {
+          "question": "Which tool is commonly used for bundling JavaScript files?",
+          "options": [
+            "Babel",
+            "Webpack",
+            "Git"
+          ],
+          "answer": "Webpack",
+          "_id": "68782f33c4c4ccaf46c80a20"
+        }
+      ],
+      "_id": "68782f33c4c4ccaf46c80a1f"
+    },
+    {
+      "subsectionOrder": 4,
+      "title": "Setting Up and Running a Development Server",
+      "content": "Running a local development server is crucial for testing changes quickly. npm can run scripts to start a server using packages like express or nodemon. This server can auto-reload on changes for efficiency.",
+      "videoUrl": "http://video.com/runningDevServer",
+      "codeExamples": [
+        "{\n  \"scripts\": {\n    \"dev\": \"nodemon server.js\"\n  }\n}"
+      ],
+      "externalLinks": [
+        "https://expressjs.com/",
+        "https://nodemon.io/"
+      ],
+      "quizzes": [
+        {
+          "question": "Which npm package can automatically restart a Node.js application?",
+          "options": [
+            "nodemon",
+            "express",
+            "pm2"
+          ],
+          "answer": "nodemon",
+          "_id": "68782f33c4c4ccaf46c80a22"
+        }
+      ],
+      "_id": "68782f33c4c4ccaf46c80a21"
+    }
+  ],
+  "supplementalVideos": [
+    "http://video.com/npmAdvancedUsage",
+    "http://video.com/buildWithWebpack"
+  ],
+  "references": [
+    "https://docs.npmjs.com/cli/v7/commands/npm-run-script",
+    "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs"
+  ]
+}
