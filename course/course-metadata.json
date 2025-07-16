@@ -29,11 +29,19 @@
     {
       "name": "Doina Fitchevici",
       "githubUsername": "DoinaFitchevici"
+    },
+    {
+      "name": "Hanna Akhramchuk",
+      "githubUsername": "akhhanna20"
+    },
+    {
+      "name": "Tom Rau",
+      "githubUsername": "hifilorau"
     }
   ],
   "status": "pending",
   "originalGithubUrl": null,
+  "remoteGithubUrl": "https://github.com/1992tw/newexport",
   "createdAt": "2025-07-16T23:00:20.354Z",
-  "updatedAt": "2025-07-16T23:00:20.354Z",
-  "remoteGithubUrl": "https://github.com/1992tw/newexport"
+  "updatedAt": "2025-07-16T23:01:46.466Z"
 }
